@@ -7,5 +7,6 @@ public class stringmethod {
         String st = sc.next();
         //String a  = new String("Sanjay");
         System.out.println(st);
+
     }
 }
