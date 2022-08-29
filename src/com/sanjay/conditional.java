@@ -18,8 +18,12 @@ public class conditional {
         int marks = sc.nextInt();
 
         switch (marks){
-            case 1 : boolean marks>33;
-                System.out.println();
+            case 1 : marks = 10;
+                System.out.println("pass");
+                break;
+            default:
+                System.out.println("Error");
+
         }
 
     }
