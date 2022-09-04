@@ -1,14 +1,20 @@
 package com.sanjay;
 
+import java.util.Scanner;
+
 public class array {
     public static void main(String[] args){
-        int[] marks = new int[5];
-        marks[0] = 100;
-        marks[1]=34;
-        marks[2]=334;
-        System.out.println(marks[2]);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of elements you want to store.");
+        int n = sc.nextInt();
 
-        int[] mak = {43,45,3,2,34,55};
-        System.out.println(mak.length);
+        int[] array = new int[10];
+        for (int i = 0; i<n;i++){
+            array[i] = sc.nextInt();
+        }
+        System.out.println("Array elements are:");
+        for(int i= 0;i<n;i++){
+            System.out.println(array[i]);
+        }
     }
 }
