@@ -2,6 +2,12 @@ package com.sanjay;
 import java.util.Scanner;
 
 public class pallindromeOfNum{
+    public static void main(String[] args){
+        System.out.println("Enter the element");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        System.out.println(pall(n));
+    }
     public static boolean pall(int n){
         int rev=0;
         int temp = n;
@@ -10,15 +16,7 @@ public class pallindromeOfNum{
             rev = rev*10+ld;
             temp = temp/10;
         }
-        return (temp == rev);
-
-
-    }
-    public static void main(String[] args){
-        System.out.println("Enter the element");
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        System.out.println(pall(n));
+        return (rev==n);
     }
 }
 
