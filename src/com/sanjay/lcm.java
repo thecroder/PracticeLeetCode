@@ -9,7 +9,7 @@ public class lcm {
         System.out.println("Enter Second number");
         int b = sc.nextInt();
         int n = Math.max(a, b);
-        while (true) {
+        while(true) {
             if (n % a == 0 && n % b == 0) {
                 System.out.println(n);
                 n++;
